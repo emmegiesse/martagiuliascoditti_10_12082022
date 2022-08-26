@@ -8,9 +8,10 @@ function Rating({rateElt}) {
   
   return (
     <div className="starsRate">
-      {rate.map((number) => number <= parseInt(rateElt) ?
-        (<span key={rateElt.toString()}> {fullStar} </span>) : 
-        (<span key={rateElt.toString()}> {emptyStar} </span>))}
+      {rate.map((number) => 
+      number <= parseInt(rateElt) ?
+      (<span key={number}> {fullStar} </span>) : 
+      (<span key={number}> {emptyStar} </span>))}
     </div>
   );
 }

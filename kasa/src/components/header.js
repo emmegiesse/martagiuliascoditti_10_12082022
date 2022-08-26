@@ -11,12 +11,12 @@ function Header() {
                     <img src="/assets/logo_red.png" alt="logo kasa" className="logoHeader" />
                 </Link>
                 <div>
-                    <NavLink to='/'> Accueil </NavLink>
-                    <NavLink to='/about'> A Propos </NavLink>
+                    <NavLink className={(navData) => navData.isActive ? "active" : "" } to='/'> Accueil </NavLink>
+                    <NavLink className={(navData) => navData.isActive ? "active" : "" } to='/about'> A Propos </NavLink>
                 </div>
             </nav>
         </header>
-    )
+    );
 }
     
 export default Header

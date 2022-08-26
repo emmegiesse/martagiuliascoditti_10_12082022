@@ -12,7 +12,7 @@ function Banner({ urlImg, texte }) {
     <div className="bannerBg"></div>
     {texte && 
       <p className="bannerText">
-      <span>{texte}</span>
+        <span>{texte}</span>
       </p>
     }
     </div> 

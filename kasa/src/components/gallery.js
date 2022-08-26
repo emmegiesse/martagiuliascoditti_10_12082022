@@ -1,10 +1,8 @@
 import { useState } from "react";
-import arrowRight from "../assets/arrowRight.svg";
-import arrowLeft from "../assets/arrowLeft.svg";
+//import arrowRight from "../assets/arrowRight.svg";
+//import arrowLeft from "../assets/arrowLeft.svg";
 
 function Gallery({ array, lenght }) {
-  const ArrowLeft = <img src={arrowLeft} alt="Left" />
-  const ArrowRight = <img src={arrowRight} alt="Right" />
   const [currentIndex, setCurrentIndex] = useState(0);
   const isArrayShort = lenght === 1;
   
@@ -41,9 +39,9 @@ function Gallery({ array, lenght }) {
         backgroundPositionY: "60%",
       }}
     >
-      <ArrowLeft className="galleryArrow" onClick={() => goPrevious()} />
-        <p className="currentImgIndex">{currentIndex + 1} / {array.length}</p>
-      <ArrowRight className="galleryArrow" onClick={() => goNext()} />
+      <img src="/assets/arrowLeft.svg" alt="arrowLeft" className="galleryArrow" onClick={() => goPrevious()} />
+      <p className="currentImgIndex">{currentIndex + 1} / {array.length}</p>
+      <img src="/assets/arrowRight.svg" alt="arrowRight" className="galleryArrow" onClick={() => goNext()} />
     </div>
     );
   }
