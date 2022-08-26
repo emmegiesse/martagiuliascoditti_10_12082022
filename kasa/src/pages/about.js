@@ -1,6 +1,6 @@
 import Banner from "../components/banner";
 import Dropdown from "../components/dropdown";
-import BannerAbout from "../assets/banner_about.png";
+//import BannerAbout from "../assets/banner_about.png";
 import "../style/about.css";
 
 const text = [
@@ -13,7 +13,7 @@ const text = [
 function About() {
   return (
     <div className="main">
-      <Banner urlImg={BannerAbout} />
+      <Banner urlImg="../assets/banner_about.png" />
       <div className="aboutMain">
         <Dropdown title="Fiabilité" textContent={text[0]} />
         <Dropdown title="Respect" textContent={text[1]} />

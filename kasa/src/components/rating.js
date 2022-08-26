@@ -1,9 +1,9 @@
-import starOn from "../assets/starOn.svg"
-import starOff from "../assets/starOff.svg"
+//import starOn from "../assets/starOn.svg"
+//import starOff from "../assets/starOff.svg"
 
 function Rating({rateElt}) {
-  const fullStar = <img src={starOn} alt="star" />
-  const emptyStar = <img src={starOff} alt="star" />
+  const fullStar = <img src="../assets/starOn.svg" alt="full star" />
+  const emptyStar = <img src="../assets/starOff.svg" alt="empty star" />
   const rate = [1, 2, 3, 4, 5];
   
   return (

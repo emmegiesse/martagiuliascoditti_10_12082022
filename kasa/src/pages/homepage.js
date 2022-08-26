@@ -2,13 +2,13 @@ import { data } from "../data/data";
 import Banner from "../components/banner";
 import Thumb from "../components/thumbnails";
 import "../style/homepage.css";
-import bannerHome from "../assets/banner_home.png";
+//import bannerHome from "../assets/banner_home.png";
 
 function HomePage() {
 
     return (
         <div className="main">
-            <Banner urlImg={bannerHome} texte="Chez vous, partout et ailleurs" />
+            <Banner urlImg="../assets/banner_home.png" texte="Chez vous, partout et ailleurs" />
             <div className="thumGallery">
                 {data.map((data) => {
                     return (
