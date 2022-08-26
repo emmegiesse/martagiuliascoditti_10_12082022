@@ -8,7 +8,7 @@ function HomePage() {
 
     return (
         <div className="main">
-            <Banner urlImg="../assets/banner_home.png" texte="Chez vous, partout et ailleurs" />
+            <Banner urlImg="../assets/banner_home.png" texte="Chez vous, partout et ailleurs" page={"homepage"} />
             <div className="thumGallery">
                 {data.map((data) => {
                     return (

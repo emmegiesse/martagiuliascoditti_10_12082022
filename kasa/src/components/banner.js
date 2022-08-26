@@ -1,12 +1,12 @@
-function Banner({ urlImg, texte }) {
+function Banner({ urlImg, texte, page }) {
   
   return (
-    <div className="banner" 
+    <div className={`banner-${page}`}
       style={{
       backgroundImage: `url(${urlImg})`,
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
-      //backgroundPositionY: "40%",
+      backgroundPositionY: "40%",
       }}
     >
     <div className="bannerBg"></div>

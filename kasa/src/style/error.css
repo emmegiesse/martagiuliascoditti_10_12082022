@@ -1,26 +1,44 @@
 .errorPage {
-    font-family: "Montserrat";
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #FF6060;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FF6060;
+}
+
+.errorNumber {
+  font-size: 288px;
+  font-weight: 700;
+}
+
+.errorText {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 5%;
+  font-weight: 500;
+}
+
+.errorPage a {
+  font-size: 1.13em;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 767px) {
+  .errorPage {
+    padding: 3%;
   }
-  
   .errorNumber {
-    font-size: 288px;
-    font-weight: 700;
+    font-size: 96px;
+    margin-top: 25%;
   }
-  
   .errorText {
     text-align: center;
-    font-size: 36px;
-    margin-bottom: 5%;
-    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 44%;
+    margin-top: 1%;
   }
-  
   .errorPage a {
-    font-size: 1.13em;
-    margin-bottom: 5%;
+    font-size: 14px;
+    margin-bottom: 90%;
   }
-  
+}

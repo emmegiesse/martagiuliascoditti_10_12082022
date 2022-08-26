@@ -13,7 +13,7 @@ const text = [
 function About() {
   return (
     <div className="main">
-      <Banner urlImg="../assets/banner_about.png" />
+      <Banner urlImg="../assets/banner_about.png" page={"about"}/>
       <div className="aboutMain">
         <Dropdown title="Fiabilité" textContent={text[0]} />
         <Dropdown title="Respect" textContent={text[1]} />

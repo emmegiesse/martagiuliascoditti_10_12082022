@@ -10,10 +10,10 @@ function Dropdown({ title, textContent }) {
       <div className="dropdownBanner"> 
         <h4 className="dropdownTitle">{title}</h4>
         { isOpen ? 
-          <div>
+          <div className = "arrowUp">
             <img src="/assets/arrowUp.svg" alt="arrowUp" onClick={() => setIsOpen(false)} />
           </div> : 
-          <div>
+          <div className = "arrowDown">
             <img src="/assets/arrowDown.svg" alt="arrowDown" onClick={() => setIsOpen(true)} />
           </div> }
       </div>  

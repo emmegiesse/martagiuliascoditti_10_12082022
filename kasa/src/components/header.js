@@ -10,7 +10,7 @@ function Header() {
                 <Link to='/'>
                     <img src="/assets/logo_red.png" alt="logo kasa" className="logoHeader" />
                 </Link>
-                <div>
+                <div className="navLinks">
                     <NavLink className={(navData) => navData.isActive ? "active" : "" } to='/'> Accueil </NavLink>
                     <NavLink className={(navData) => navData.isActive ? "active" : "" } to='/about'> A Propos </NavLink>
                 </div>

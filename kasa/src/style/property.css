@@ -1,0 +1,51 @@
+.propertyMain {
+    color: #FF6060;
+    margin: 1% 7% 1% 7%;
+}
+
+.propertyTitle {
+    font-size: 36px;
+}
+
+.propertyLocation {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.propertyHR {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.description {
+    width: 100%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .propertyMain {
+        margin-bottom: 7%;
+    }
+
+    .propertyTitle {
+        font-size: 18px;
+    }
+
+    .propertyLocation {
+        font-size: 14px;
+    }
+
+    .propertyHR {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6%;
+    }
+    
+}
+
