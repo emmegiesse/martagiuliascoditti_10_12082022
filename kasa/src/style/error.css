@@ -1,3 +1,7 @@
+a {
+  color: #FF6060;
+}
+
 .errorPage {
   display: flex;
   flex-direction: column;

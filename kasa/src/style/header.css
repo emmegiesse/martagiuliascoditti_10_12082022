@@ -1,5 +1,5 @@
 #header {
-    margin: 30px 60px 40px 100px;
+    margin: 30px 60px 20px 100px;
 }
 
 nav {
@@ -17,9 +17,13 @@ nav {
     justify-content: space-around;
     color: #FF6060;
     text-decoration: none;    
-    font-size : 1.5rem;
-    font-weight: 500;
+    font-size : 1.3rem;
+    font-weight: 300;
     margin: 0px 40px;
+}
+
+.navLinks a:active {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {

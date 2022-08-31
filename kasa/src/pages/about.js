@@ -15,10 +15,10 @@ function About() {
     <div className="main">
       <Banner urlImg="../assets/banner_about.png" page={"about"}/>
       <div className="aboutMain">
-        <Dropdown title="Fiabilité" textContent={text[0]} />
-        <Dropdown title="Respect" textContent={text[1]} />
-        <Dropdown title="Service" textContent={text[2]} />
-        <Dropdown title="Responsabilité" textContent={text[3]} />
+        <Dropdown title="Fiabilité" textContent={text[0]} page={"about"}/>
+        <Dropdown title="Respect" textContent={text[1]} page={"about"}/>
+        <Dropdown title="Service" textContent={text[2]} page={"about"}/>
+        <Dropdown title="Responsabilité" textContent={text[3]} page={"about"}/>
       </div>
     </div>
   );

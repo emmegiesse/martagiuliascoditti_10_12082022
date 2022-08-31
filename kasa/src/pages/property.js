@@ -36,9 +36,9 @@ function Property () {
           </div>
 
           <div className="propertyHR">
-            <div className="host">
+            <div className="hostInfo">
               <h3 className="hostName">{houseData.host.name.split(" ")[0]}<br/>{houseData.host.name.split(" ")[1]}</h3>
-            <div>
+            <div className="hostPic">
               <img
                 src={houseData.host.picture}
                 className="hostPicture"
@@ -46,19 +46,19 @@ function Property () {
               />
             </div>
           </div>
-          <div>
+          <div className="propertyRating">
             <Rating rateElt={houseData.rating} />
           </div>
 
         </div>
       </div>
       
-      <div className="description">
+      <div className="propertyDE">
         <div className="dropdownDescription">
-          <Dropdown title="Description" textContent={houseData.description} />
+          <Dropdown title="Description" textContent={houseData.description} page={"description"}/>
         </div>
         <div className="dropdownEquipments">
-          <Dropdown title="Équipements" textContent={houseData.equipments.map((e) => {
+          <Dropdown title="Équipements" page={"equipments"} textContent={houseData.equipments.map((e) => {
               return (
                 <li key={e} className="equipementElt">
                   {e}
