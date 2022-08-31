@@ -141,45 +141,49 @@
     border-radius: 20px ;
 }
 
-
-/*
-
-
-.dropdownEquipments {
-    height: 100%;
-    width: 48%;
-}
-  
-.dropdownEquipments div {
-    margin: 0;
-    width: 100%;
-    font-size: 18px;
-}
-
-.equipementElt {
-    margin: 1%;
-    list-style: none;
-}
-
-*/
-
-
-
 @media screen and (max-width: 768px) {
     .propertyMain {
         margin-bottom: 7%;
+    }
+
+    .galleryDisplay {
+        margin-top: 25px;
+        margin-bottom: 0;
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .galleryArrow {
+        height: 8%;
+        padding: 8px;
     }
 
     .propertyTitle {
         font-size: 18px;
     }
 
-    .galleryArrow {
-        font-size: 1.2em;
+    .infoSection {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .propertyTitle {
+        font-size: 20px;
+        margin-bottom: 8px;
     }
 
     .propertyLocation {
-        font-size: 14px;
+        font-size: 15px;
+    }
+
+    .tagElt {
+        padding-top: 5px;
+    }
+    
+    .tagEltSp {
+        font-size: 10px;
+        padding: 0.5em 2em;
     }
 
     .propertyHR {
@@ -190,23 +194,12 @@
         margin-bottom: 6%;
     }
 
-    .tagElt {
-        font-size: 10px;
-    }
-
-    .galleryDisplay {
-        height: 255px;
-        border-radius: 10px;
-    }
-
-    .info_container {
-        display: flex;
-        flex-direction: column;
-    }
-
     .host {
         align-items: center;
-        font-size: 12px;
+    }
+
+    .hostName {
+        font-size: 14px;
     }
 
     .hostPicture {
@@ -216,6 +209,35 @@
     }
 
     .star {
-        font-size: 0.95em;
+        font-size: 0.2em;
+    }
+
+    .propertyDE {
+        flex-direction: column;
+    }
+
+    .dropdownDescription, .dropdownEquipments {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .dropdown-description, .dropdown-equipments {
+        font-size: 14px;
+        padding: 0;
+    }
+    
+    .dropdownBanner-description, .dropdownBanner-equipments {
+        height: 35px;
+        border-radius: 5px;
+    }
+
+    .arrowUp, .arrowDown {
+        margin: 2%;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .dropdownContent-description, .dropdownContent-equipments {
+        font-size: 14px;
     }
 }
