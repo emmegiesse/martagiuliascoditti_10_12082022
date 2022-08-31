@@ -9,7 +9,6 @@ function Property () {
 
   let urlParams = useParams();
     const houseData = data.find((data) => data.id === urlParams.id);
-    console.log (houseData);
       if( houseData == null){
         return <Navigate to="/error"/>
       }
@@ -55,10 +54,10 @@ function Property () {
       </div>
       
       <div className="description">
-        <div className="dropdown">
+        <div className="dropdownDescription">
           <Dropdown title="Description" textContent={houseData.description} />
         </div>
-        <div className="dropdown">
+        <div className="dropdownEquipments">
           <Dropdown title="Équipements" textContent={houseData.equipments.map((e) => {
               return (
                 <li key={e} className="equipementElt">

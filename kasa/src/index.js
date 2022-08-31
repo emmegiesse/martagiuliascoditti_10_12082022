@@ -8,7 +8,9 @@ import Error from './pages/error';
 import Property from './pages/property';
 import About from "./pages/about";
 import "./style/index.css";
-//import './index.css';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
