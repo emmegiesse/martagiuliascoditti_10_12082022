@@ -22,9 +22,10 @@ nav {
     margin: 0px 40px;
 }
 
-.navLinks a:active {
-    text-decoration: underline;
+.active {
+    text-decoration: underline !important;
 }
+
 
 @media screen and (max-width: 767px) {
     #header {

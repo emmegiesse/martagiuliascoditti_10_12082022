@@ -13,7 +13,6 @@ function Header() {
                 <div className="navLinks">
                     <NavLink 
                         className={(navData) => navData.isActive ? "active" : "" } 
-                        //style={{ textDecoration: match ? "underline" : "none" }}
                         to='/'> Accueil </NavLink>
                     <NavLink 
                         className={(navData) => navData.isActive ? "active" : "" } 

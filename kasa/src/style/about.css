@@ -43,7 +43,13 @@
     cursor: pointer;
     padding: 10px;
 }
-  
+
+.arrowUp img, .arrowDown img {
+    width: 18px;
+    height: 18px;
+}
+
+
 .dropdownContent-about {
     color: #FF6060;
     background-color: #F6F6F6;
